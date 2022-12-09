@@ -1,0 +1,13 @@
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.contactme {
+    color: $white;
+}
+
+.last-name {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}

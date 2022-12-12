@@ -4,7 +4,7 @@
 }
 
 .card-container {
-    width: 900px;
+    width: 1400px;
     max-width: 100%;
     padding: 10px;
     margin: 0 auto;
@@ -19,11 +19,21 @@
 }
 
 .card {
-    flex: 1 0 250px;
+    flex: 1 0 350px;
     background: $color-secondary;
     padding: 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
     align-self: normal;
+}
+
+.card .img {
+    width: 425px;
+    height: 250px;
+}
+
+.card .img img {
+    width: 100%;
+    height: 100%;
 }
 
 .card .text {
@@ -32,3 +42,7 @@
     color: $color-primary;
 }
 
+.text h4 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}

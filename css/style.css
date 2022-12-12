@@ -175,7 +175,7 @@ textarea:valid ~ label {
 }
 
 .card-container {
-  width: 900px;
+  width: 1400px;
   max-width: 100%;
   padding: 10px;
   margin: 0 auto;
@@ -190,15 +190,30 @@ textarea:valid ~ label {
 }
 
 .card {
-  flex: 1 0 250px;
+  flex: 1 0 350px;
   background: #c7d3d4;
   padding: 10px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
   align-self: normal;
 }
 
+.card .img {
+  width: 425px;
+  height: 250px;
+}
+
+.card .img img {
+  width: 100%;
+  height: 100%;
+}
+
 .card .text {
   padding: 10px;
   text-align: left;
   color: #603f83;
+}
+
+.text h4 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
 }/*# sourceMappingURL=style.css.map */

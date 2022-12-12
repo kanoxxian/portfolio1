@@ -40,3 +40,21 @@
     margin: 0 auto;
     color: $color-primary;
 }
+
+@media screen and (max-width: $brkpoint-xxlg) {
+    .aboutme {
+        width: 100%;
+        height: auto;
+        padding: 70px 0px;
+    }
+    
+}
+
+@media screen and (max-width: $brkpoint-lg) {
+    .aboutme-container .aboutme img {
+        margin-bottom: 35px;
+    }
+    .text h2 {
+        font-size: 52px;
+    }
+}

@@ -316,4 +316,20 @@ textarea:valid ~ label {
   max-width: 95%;
   margin: 0 auto;
   color: #2A2438;
+}
+
+@media screen and (max-width: 1200px) {
+  .aboutme {
+    width: 100%;
+    height: auto;
+    padding: 70px 0px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .aboutme-container .aboutme img {
+    margin-bottom: 35px;
+  }
+  .text h2 {
+    font-size: 52px;
+  }
 }/*# sourceMappingURL=style.css.map */

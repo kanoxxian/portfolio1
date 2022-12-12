@@ -22,8 +22,8 @@ body {
   height: 300%;
   width: 200px;
   position: absolute;
-  background-color: #c7d3d4;
-  border-right: 3px solid #603f83;
+  background-color: #E9D5DA;
+  border-right: 3px solid #2A2438;
   z-index: 1;
   transform: translateX(0);
 }
@@ -33,7 +33,7 @@ body {
 }
 
 .nav-head {
-  color: #603f83;
+  color: #2A2438;
   font-size: 30px;
   font-weight: bold;
   padding-top: 30px;
@@ -54,7 +54,7 @@ body {
 
 .nav-head ol li a {
   position: relative;
-  color: #603f83;
+  color: #2A2438;
   padding: 15px 10px;
   text-decoration: none;
   display: block;
@@ -94,7 +94,7 @@ form {
 }
 
 .contactme {
-  color: #c7d3d4;
+  color: #E9D5DA;
 }
 
 .last-name {
@@ -123,10 +123,10 @@ input, textarea {
   width: 100%;
   padding: 10px;
   outline: 0;
-  border: 1px solid #c7d3d4;
+  border: 1px solid #E9D5DA;
   background: transparent;
   font-size: 15px;
-  color: #c7d3d4;
+  color: #E9D5DA;
 }
 
 label {
@@ -135,7 +135,7 @@ label {
   left: 0;
   top: 0;
   padding: 10px;
-  color: #c7d3d4;
+  color: #E9D5DA;
   cursor: text;
   transition: 0.2s;
 }
@@ -147,10 +147,10 @@ label {
 
 button {
   padding: 10px 0;
-  color: #c7d3d4;
+  color: #E9D5DA;
   outline: none;
   background: transparent;
-  border: 1px solid #c7d3d4;
+  border: 1px solid #E9D5DA;
   width: 100%;
   cursor: pointer;
   grid-column-start: 1;
@@ -179,7 +179,7 @@ textarea:valid ~ label {
   max-width: 100%;
   padding: 50px;
   margin: 0 auto;
-  background-color: #603f83;
+  background-color: #2A2438;
   margin-left: 200px;
 }
 
@@ -193,7 +193,7 @@ textarea:valid ~ label {
 
 .card {
   flex: 1 0 350px;
-  background: #c7d3d4;
+  background: #E9D5DA;
   padding: 10px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
   align-self: normal;
@@ -212,7 +212,7 @@ textarea:valid ~ label {
 .card .text {
   padding: 10px;
   text-align: left;
-  color: #603f83;
+  color: #2A2438;
 }
 
 .text h4 {
@@ -226,7 +226,7 @@ textarea:valid ~ label {
   height: 700px;
   margin-left: 125px;
   overflow: hidden;
-  background: url(../img/placeholderhero.png);
+  background: url(../img/hero.jpg);
   background-size: cover;
 }
 
@@ -237,8 +237,10 @@ textarea:valid ~ label {
   transform: translate(-50%, -50%);
   overflow: hidden;
   text-align: center;
-  color: #603f83;
+  color: #2A2438;
   font-weight: 600;
+  text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+  opacity: 65%;
 }
 
 .text-container h1 {

@@ -4,7 +4,7 @@
     height: 700px;
     margin-left: 125px;
     overflow: hidden;
-    background: url(../img/placeholderhero.png);
+    background: url(../img/hero.jpg);
     background-size: cover;
 }
 
@@ -17,6 +17,8 @@
     text-align: center;
     color: $color-primary;
     font-weight: 600;
+    text-shadow: -1px 0 $white, 0 1px $white, 1px 0 $white, 0 -1px $white;
+    opacity: 65%;
 }
 
 .text-container h1 {

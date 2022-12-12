@@ -1,8 +1,9 @@
 .hero-image {
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
     position: relative;
     height: 700px;
-    margin-left: 125px;
     overflow: hidden;
     background: url(../img/hero.jpg);
     background-size: cover;

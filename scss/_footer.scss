@@ -1,16 +1,26 @@
 .footer-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    background: $color-primary;
+    padding: 50px;
+    margin-left: 200px;
 }
 
 form {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px
+    gap: 10px;
+    padding: 15px;
 }
 
 .contactme {
+    display: block;
     color: $color-secondary;
+    padding: 15px;
+}
+
+.contactme h2, h3, p {
+    padding: 15px 0;
 }
 
 .last-name {

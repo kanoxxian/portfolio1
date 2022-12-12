@@ -1,5 +1,5 @@
 .nav-container {
-    height: 300%;
+    height: 226.5%;
     width: 200px;
     position: absolute;
     background-color: $color-secondary;
@@ -62,3 +62,7 @@
     width: 100%;
 }
 
+.social-media {
+    display: flex;
+    margin-top: 25px;
+}

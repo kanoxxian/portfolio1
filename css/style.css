@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   background-image: url(../img/background.jpg);
   width: 100%;
@@ -15,8 +19,8 @@ body {
 }
 
 .nav-container {
-  height: 100%;
-  width: 250px;
+  height: 300%;
+  width: 200px;
   position: absolute;
   background-color: #c7d3d4;
   border-right: 3px solid #603f83;
@@ -162,11 +166,8 @@ textarea:valid ~ label {
 }
 
 .leftmargin {
-  margin-left: 250px;
-}
-
-.topmargin {
-  margin-top: 600px;
+  margin-left: 200px;
+  height: 100vh;
 }
 
 .img {
@@ -175,10 +176,11 @@ textarea:valid ~ label {
 }
 
 .card-container {
-  width: 1400px;
   max-width: 100%;
-  padding: 10px;
+  padding: 50px;
   margin: 0 auto;
+  background-color: #603f83;
+  margin-left: 200px;
 }
 
 .wrap {
@@ -216,4 +218,42 @@ textarea:valid ~ label {
 .text h4 {
   margin-bottom: 10px;
   font-size: 1.2rem;
+}
+
+.hero-image {
+  width: 100%;
+  position: relative;
+  height: 700px;
+  margin-left: 125px;
+  overflow: hidden;
+  background: url(../img/placeholderhero.png);
+  background-size: cover;
+}
+
+.text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  text-align: center;
+  color: #603f83;
+  font-weight: 600;
+}
+
+.text-container h1 {
+  font-size: 72px;
+  letter-spacing: 0.5px;
+}
+
+.text-container h1 span {
+  padding: 5px 15px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.description {
+  margin: 20px;
+  display: block;
+  font-size: 26px;
 }/*# sourceMappingURL=style.css.map */

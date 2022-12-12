@@ -1,0 +1,37 @@
+.hero-image {
+    width: 100%;
+    position: relative;
+    height: 700px;
+    margin-left: 125px;
+    overflow: hidden;
+    background: url(../img/placeholderhero.png);
+    background-size: cover;
+}
+
+.text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    text-align: center;
+    color: $color-primary;
+    font-weight: 600;
+}
+
+.text-container h1 {
+    font-size: 72px;
+    letter-spacing: 0.5px;
+}
+
+.text-container h1 span {
+    padding: 5px 15px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.description {
+    margin: 20px;
+    display: block;
+    font-size: 26px;
+}

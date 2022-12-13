@@ -1,0 +1,16 @@
+.comingsoon h2 {
+    padding: 50px;
+    font-size: 72px;
+}
+
+.comingsoon {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 95%;
+    margin: 0 auto;
+    color: $color-primary;
+}
+

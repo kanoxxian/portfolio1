@@ -37,8 +37,10 @@
     justify-content: space-around;
     width: 100%;
     max-width: 95%;
-    margin: 0 auto;
-    color: $color-primary;
+    margin-top: 25px;
+    padding: 25px;
+    color: $color-secondary;
+    background-color: #45a29e;
 }
 
 @media screen and (max-width: $brkpoint-xxlg) {
@@ -63,5 +65,11 @@
 @media screen and (max-width: $brkpoint-md) {
     .aboutme-container {
         padding-top: 10px;
+    }
+}
+
+@media screen and (max-width: $brkpoint-xlg) {
+    .aboutme-container {
+        margin-left: 0;
     }
 }

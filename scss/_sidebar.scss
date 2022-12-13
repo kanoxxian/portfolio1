@@ -1,7 +1,7 @@
 .nav-container {
     display: block;
     overflow: auto;
-    width: 200px;
+    width: 220px;
     position: fixed;
     background-color: $color-secondary;
     border-right: 3px solid $color-primary;
@@ -67,4 +67,11 @@
 .social-media {
     display: flex;
     margin-top: 25px;
+}
+
+
+@media screen and (max-width: $brkpoint-xlg) {
+    .nav-container {
+        display: none;
+    }
 }

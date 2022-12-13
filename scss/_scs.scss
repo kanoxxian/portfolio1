@@ -1,0 +1,56 @@
+.scs-container {
+    margin-left: 200px;
+    padding: 50px;
+    background-color: $color-secondary;
+    color: $color-secondary;
+}
+
+.scs-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.scs-info {
+    background-color: #F2C85B;
+    margin: 15px;
+    width: 400px;
+    padding: 15px;
+    height: 420px;
+}
+
+.netmatters-info {
+    background-color: #FBA465;
+    margin: 15px;
+    width: 400px;
+    padding: 15px;
+    height: 420px;
+
+}
+
+.netmatters-info ul {
+    list-style: none;
+    padding: 45px 0;
+}
+
+.treehouse-info {
+    background-color: #F86E51;
+    width: 400px;
+    padding: 15px;
+    min-height: 420px;
+}
+
+.treehouse-info p {
+    padding-top: 45px;
+}
+
+.bold {
+    margin-top: 15px;
+}
+
+@media screen and (max-width: $brkpoint-xxlg) {
+    .scs-grid {
+        flex-wrap: wrap;
+    }
+}

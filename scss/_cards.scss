@@ -51,6 +51,15 @@
 
 @media screen and (max-width: $brkpoint-xlg) {
     .card-container {
+        padding-top: 15px;
         margin-left: 0;
+        padding: 0px;
+    }
+}
+
+
+@media screen and (max-width: $brkpoint-msm) {
+    .card {
+        flex: 1 0 200px;
     }
 }

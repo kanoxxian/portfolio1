@@ -12,13 +12,13 @@
 .text-container {
     position: absolute;
     top: 50%;
-    left: 54%;
+    left: calc(50% - -100px);
     transform: translate(-50%, -50%);
     overflow: hidden;
     text-align: center;
-    color: $color-secondary;
+    color: $color-primary;
     font-weight: 600;
-    text-shadow: -1px 0 $white, 0 1px $white, 1px 0 $white, 0 -1px $white;
+    // text-shadow: -1px 0 $white, 0 1px $white, 1px 0 $white, 0 -1px $white;
     opacity: 65%;
 }
 
@@ -37,4 +37,10 @@
     margin: 20px;
     display: block;
     font-size: 26px;
+}
+
+@media screen and (max-width: $brkpoint-xlg) {
+    .text-container {
+        left: 50%;
+    }
 }

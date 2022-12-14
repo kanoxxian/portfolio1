@@ -65,13 +65,13 @@ body {
   letter-spacing: 0.4px;
 }
 .nav-head ol li a:hover {
-  color: #A93F83;
+  color: #45a29e;
 }
 
 .nav-head ol li a:after {
   content: "";
   position: absolute;
-  background-color: #8abad3;
+  background-color: #66fcf1;
   height: 3px;
   width: 0;
   left: 0;
@@ -191,6 +191,13 @@ textarea:valid ~ label {
     margin-left: 0;
   }
 }
+@media screen and (max-width: 768px) {
+  .footer-container {
+    display: grid;
+    grid-template-rows: 0.4fr 0.6fr;
+    grid-template-columns: 1fr;
+  }
+}
 .leftmargin {
   margin-left: 200px;
   height: 100vh;
@@ -248,7 +255,14 @@ textarea:valid ~ label {
 
 @media screen and (max-width: 992px) {
   .card-container {
+    padding-top: 15px;
     margin-left: 0;
+    padding: 0px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .card {
+    flex: 1 0 200px;
   }
 }
 .hero-image {
@@ -265,13 +279,12 @@ textarea:valid ~ label {
 .text-container {
   position: absolute;
   top: 50%;
-  left: 54%;
+  left: calc(50% + 100px);
   transform: translate(-50%, -50%);
   overflow: hidden;
   text-align: center;
-  color: #1f2833;
+  color: #c5c6c7;
   font-weight: 600;
-  text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
   opacity: 65%;
 }
 
@@ -292,6 +305,11 @@ textarea:valid ~ label {
   font-size: 26px;
 }
 
+@media screen and (max-width: 992px) {
+  .text-container {
+    left: 50%;
+  }
+}
 .aboutme-container {
   display: flex;
   justify-content: center;

@@ -88,6 +88,12 @@ body {
   margin-top: 25px;
 }
 
+h2 a {
+  text-decoration: none;
+  color: #c5c6c7;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 992px) {
   .nav-container {
     display: none;
@@ -445,6 +451,7 @@ textarea {
   background-color: #c9b037;
   width: 400px;
   padding: 15px;
+  margin: 15px;
   min-height: 420px;
 }
 
@@ -459,5 +466,10 @@ textarea {
 @media screen and (max-width: 1200px) {
   .scs-grid {
     flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 992px) {
+  .scs-container {
+    margin-left: 0;
   }
 }/*# sourceMappingURL=style.css.map */

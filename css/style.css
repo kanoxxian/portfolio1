@@ -185,6 +185,11 @@ textarea:valid ~ label {
   font-size: 14px;
 }
 
+textarea {
+  resize: none;
+  width: 100%;
+}
+
 @media screen and (max-width: 992px) {
   .footer-container {
     margin-left: 0;

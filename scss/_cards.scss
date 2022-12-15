@@ -63,3 +63,10 @@
         flex: 1 0 200px;
     }
 }
+
+@media screen and (min-width: $brkpoint-xxlg) {
+    .card {
+        flex: 1 0 400px;
+    }
+
+}

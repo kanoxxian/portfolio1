@@ -94,8 +94,90 @@ h2 a {
   cursor: pointer;
 }
 
+.hamburger {
+  display: block;
+  position: relative;
+  width: 35px;
+  height: 35px;
+  margin-left: 30px;
+  margin-top: 10px;
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+  z-index: 4;
+}
+
+.hamburger .bar, .hamburger:after, .hamburger:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: #c5c6c7;
+  margin: 6px 0px;
+  transition: 0.2s;
+  z-index: 3;
+}
+
+.hamburger.is-active:before {
+  transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.is-active:after {
+  transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.hamburger.is-active .bar {
+  opacity: 0;
+}
+
+.mobile-nav {
+  z-index: 2;
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 100%;
+  width: 273px;
+  min-height: 100vh;
+  background-color: #1f2833;
+  padding-top: 120px;
+  transition: 0.8s;
+  border-right: 3px solid #c5c6c7;
+}
+.mobile-nav a {
+  display: block;
+  text-align: center;
+  margin-bottom: 16px;
+  padding: 12px 16px;
+  color: #c5c6c7;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.mobile-nav.is-active {
+  left: 0;
+}
+
+.mobile-nav a:hover {
+  color: #45a29e;
+}
+
 @media screen and (max-width: 992px) {
   .nav-container {
+    display: none;
+  }
+}
+@media screen and (min-width: 992px) {
+  .mobile-nav {
+    display: none;
+  }
+  .hamburger {
     display: none;
   }
 }
@@ -181,6 +263,12 @@ button {
   cursor: pointer;
   grid-column-start: 1;
   grid-column-end: 4;
+  transition: 0.4s;
+}
+
+button:hover {
+  color: #c5c6c7;
+  background-color: #1f2833;
 }
 
 input:focus ~ label,
@@ -194,6 +282,20 @@ textarea:valid ~ label {
 textarea {
   resize: none;
   width: 100%;
+}
+
+input.invalid {
+  border: 1px solid #C10009;
+}
+
+.error-hint {
+  color: #C10009;
+  margin-top: 4px;
+  font-size: 12px;
+}
+
+.hidden {
+  display: none;
 }
 
 @media screen and (max-width: 992px) {
@@ -280,7 +382,7 @@ textarea {
     flex: 1 0 400px;
   }
 }
-.hero-image {
+#hero-image {
   width: 100vw;
   height: 100vh;
   max-width: 100%;

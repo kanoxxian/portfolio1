@@ -288,6 +288,10 @@ input.invalid {
   border: 1px solid #C10009;
 }
 
+textarea.invalid {
+  border: 1px solid #C10009;
+}
+
 .error-hint {
   color: #C10009;
   margin-top: 4px;

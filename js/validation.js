@@ -66,6 +66,3 @@ form.addEventListener('submit', (e) => {
 });
 
 nameInput.removeAttribute('required');
-// emailInput.addEventListener("input", () => {
-//     validateInputs();
-// });

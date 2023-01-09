@@ -354,6 +354,19 @@ input.invalid {
   height: 100%;
 }
 
+.gradient {
+  position: relative;
+}
+.gradient::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0) 0%, rgb(31, 40, 51) 95%);
+}
+
 .card .text {
   padding: 10px;
   text-align: left;
@@ -499,8 +512,9 @@ input.invalid {
   }
 }
 .comingsoon h2 {
-  padding: 50px;
+  margin-top: 20px;
   font-size: 72px;
+  text-align: center;
 }
 
 .comingsoon {
@@ -508,12 +522,60 @@ input.invalid {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-  width: 100%;
-  max-width: 95%;
-  margin: 0 auto;
+  align-content: flex-start;
+  max-width: 100%;
+  height: 100vh;
+  margin-left: 220px;
+  color: #c5c6c7;
+  background-color: #1f2833;
+}
+
+.coding-text {
+  font-size: 56px;
+  margin-bottom: 50px;
   color: #c5c6c7;
 }
 
+.comingsoon img {
+  margin-top: 20px;
+  border: 2px #c5c6c7 solid;
+  width: 100%;
+  max-width: 900px;
+  max-height: 900px;
+}
+
+.code-img-ex {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: #c5c6c7;
+}
+
+.code-img-ex p {
+  display: none;
+  position: absolute;
+  border: 2px #c5c6c7 solid;
+  padding: 15px;
+  align-content: center;
+  max-width: 400px;
+  left: 50%;
+  top: 50%;
+}
+
+.code-img-exsmall p {
+  display: block;
+}
+
+@media screen and (max-width: 992px) {
+  .comingsoon {
+    margin-left: 0;
+  }
+  .code-img-ex p {
+    position: static;
+    margin-top: 20px;
+  }
+}
 .scs-container {
   margin-left: 200px;
   padding: 50px;

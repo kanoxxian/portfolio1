@@ -61,10 +61,36 @@
         <h2>Coding Examples.</h2>
     </div> 
     <div class="code-img-ex code-img-exsmall">
+        <h4>JS Example</h4>
         <img src="img/code1.jpg">
         <p>This is a snippet of code for my form validation, this javascript checks if the forms have been input correctly, example the email section has a regex which checks for valid characters that will only allow valid email addresses. Also a two lines of javascript that adds/removes classes in html to create an animation that changes the border colour to red if the input is invalid.</p>
     </div>
-</div>        
+    <div class="sql-code">
+        <h4>SQL Example</h4>
+        <img src="img/movie-database.png" alt="">
+        <p>In this challenge, I was tasked to select a database, I picked Movies. and Create a query that includes a sub query with formatted outputs that are sorted by a value</p>
+        <pre>
+            <code>
+SELECT mov_title AS "Movie", mov_time AS "Duration", mov_rel_country AS "Language" FROM movie
+WHERE mov_id IN(
+    SELECT mov_id FROM movie_genres
+    WHERE gen_id IN (
+            SELECT gen_id FROM genres
+            WHERE gen_title IN ('Drama', 'Romance', 'Thriller')
+        )
+    )
+AND mov_time >= 100
+ORDER BY mov_time ASC
+            </code>
+        </pre>
+        <p>The Object of this query was to Select genres that I am interested in watching, "Drama", "Romance", "Thriller". To See how long the movie
+            would run for, and to see if I would need to have subtitles. Hence the "Duration" and "Language" columns. I've ordered the table by Duration and to see if the movie is over 100 Mins.
+            After running my code this is the table that I am presented with:
+        </p>
+        <img src="img/SQL_TABLE.jpg" alt="" class="sqltable">
+    </div>
+</div>
+
 
 
 

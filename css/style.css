@@ -528,7 +528,7 @@ textarea.invalid {
   justify-content: space-around;
   align-content: flex-start;
   max-width: 100%;
-  height: 100vh;
+  height: 250vh;
   margin-left: 220px;
   color: #c5c6c7;
   background-color: #1f2833;
@@ -551,6 +551,8 @@ textarea.invalid {
 .code-img-ex {
   position: relative;
   display: flex;
+  align-items: center;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-around;
   color: #c5c6c7;
@@ -569,6 +571,35 @@ textarea.invalid {
 
 .code-img-exsmall p {
   display: block;
+}
+
+.sql-code {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sql-code h4 {
+  margin-top: 30px;
+}
+
+.sql-code img {
+  margin-top: 30px;
+}
+
+.sql-code p {
+  max-width: 50%;
+}
+
+.sqltable {
+  width: auto !important;
+  height: auto !important;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  text-align: justify;
 }
 
 @media screen and (max-width: 992px) {

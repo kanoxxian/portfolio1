@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="./css/lightbox.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/4be6635281.js" crossorigin="anonymous"></script>
     <title>Sam Gray Portfolio</title>
 </head>
@@ -55,50 +56,22 @@
     </div>
 </div>
 
-
-<div class="comingsoon">
-    <div class="coding-text">
-        <h2>Coding Examples.</h2>
-    </div> 
-    <div class="code-img-ex code-img-exsmall">
-        <h4>JS Example</h4>
-        <img src="img/code1.jpg">
-        <p>This is a snippet of code for my form validation, this javascript checks if the forms have been input correctly, example the email section has a regex which checks for valid characters that will only allow valid email addresses. Also a two lines of javascript that adds/removes classes in html to create an animation that changes the border colour to red if the input is invalid.</p>
+<div class="gallery">
+    <h2 class="gallery-title">A few of the images i've created within the last year.</h2>
+    <div class="gallery-inner">
+        <a href="img/nini.png" data-lightbox="first" data-title="Something made for my friend"><img class="gallery-img" src="img/nini.png"></a>
+        <a href="img/ball.jpg" data-lightbox="first" data-title="Just a Blackhole Effect"><img class="gallery-img" src="img/ball.jpg"></a>
+        <a href="img/unfinished.jpeg" data-lightbox="first" data-title="Something I'm working on currently"><img class="gallery-img" src="img/unfinished.jpeg"></a>
+        <a href="img/fear.jpg" data-lightbox="first" data-title="A phone background"><img class="gallery-img" src="img/fear.jpg"></a>
+        <a href="img/sephine.png" data-lightbox="first" data-title="Just something I made in my spare time"><img class="gallery-img" src="img/sephine.png"></a>
+        <a href="img/foruna.png" data-lightbox="first" data-title="Another phone background for a friend"><img class="gallery-img" src="img/foruna.png"></a>
     </div>
-    <div class="sql-code">
-        <h4>SQL Example</h4>
-        <img src="img/movie-database.png" alt="">
-        <p>In this challenge, I was tasked to select a database, I picked Movies. and Create a query that includes a sub query with formatted outputs that are sorted by a value</p>
-        <pre>
-            <code>
-SELECT mov_title AS "Movie", mov_time AS "Duration", mov_rel_country AS "Language" FROM movie
-WHERE mov_id IN(
-    SELECT mov_id FROM movie_genres
-    WHERE gen_id IN (
-            SELECT gen_id FROM genres
-            WHERE gen_title IN ('Drama', 'Romance', 'Thriller')
-        )
-    )
-AND mov_time >= 100
-ORDER BY mov_time ASC
-            </code>
-        </pre>
-        <p>The Object of this query was to Select genres that I am interested in watching, "Drama", "Romance", "Thriller". To See how long the movie
-            would run for, and to see if I would need to have subtitles. Hence the "Duration" and "Language" columns. I've ordered the table by Duration and to see if the movie is over 100 Mins.
-            After running my code this is the table that I am presented with:
-        </p>
-        <img src="img/SQL_TABLE.jpg" alt="" class="sqltable">
-    </div>
-</div>
-
-<div class="cookie-valid">
-    <h4>Cookie Validation</h4>
-    <img src="img/cookie.jpg" alt="">
-    <p>Here is my code snippet for a cookie modal consent pop up, it's just a simple piece of JS that on click allows the "Accept Cookies" button to store within the session storage.</p>
 </div>
 
 <script type="text/javascript" src="js/particles.min.js"></script>
 <script type="text/javascript" src="js/custom-particles.js"></script>
 <script src="js/validation.js"></script>
 <script src="js/hamburger.js"></script>
+<script src="js/lightbox-plus-jquery.js"></script>
 </body>
+</html>

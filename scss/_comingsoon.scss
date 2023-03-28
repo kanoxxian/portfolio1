@@ -76,6 +76,7 @@
 .sqltable {
     width: auto !important;
     height: auto !important;
+    margin: 30px;
 }
 
 pre {
@@ -89,7 +90,7 @@ pre {
     flex-direction: column;
     align-items: center;
     background-color: $color-secondary;
-    margin-left: 210px;
+    width: 100%;
 }
 
 .cookie-valid img {
@@ -108,8 +109,32 @@ pre {
     margin-bottom: 15px;
 }
 
+.ajax-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color-secondary;
+    width: 100%;
+}
+
+.ajax-form img {
+    border: 2px #c5c6c7 solid;
+    width: 100%;
+    max-width: 900px;
+    max-height: 900px;
+}
+.ajax-form p {
+    color: $color-primary;
+    max-width: 50%;
+}
+
+.ajax-form h4 {
+    color: $color-primary;
+    margin-bottom: 15px;
+}
+
 @media screen and (max-width: $brkpoint-xlg) {
-    .cookie-valid {
+    .cookie-valid, .ajax-form {
         margin-left: 0;
     }
     .comingsoon {

@@ -13,11 +13,11 @@
 
     <nav class="mobile-nav">
         <ol>
-            <li><a href="index.html#portfolio">My Portfolio</li></a>
+            <li><a href="index.php#portfolio">My Portfolio</li></a>
             <li><a href="aboutme.html">About Me</li></a>
             <li><a href="codingexamples.html">Coding Examples</li></a>
             <li><a href="scs.html">SCS Scheme</li></a>
-            <li><a href="index.html#contact-me">Contact Me</li></a>
+            <li><a href="index.php#contact-me">Contact Me</li></a>
             <div class="social-media">
                 <li><i class="fa-brands fa-facebook-f"></i></li>
                 <li><i class="fa-brands fa-instagram"></i></li>
@@ -29,13 +29,13 @@
 
 <div class="nav-container">
     <div class="nav-head">
-        <h2 class="nav-header-text"><a href="index.html">S</a></h2>
+        <h2 class="nav-header-text"><a href="index.php">S</a></h2>
         <ol>
             <li><a href="aboutme.html">About Me</li></a>
-            <li><a href="index.html#portfolio">My Portfolio</li></a>
+            <li><a href="index.php#portfolio">My Portfolio</li></a>
             <li><a href="codingexamples.html">Coding Examples</li></a>
             <li><a href="scs.html">SCS Scheme</li></a>
-            <li><a href="index.html#contact-me">Contact Me</li></a>
+            <li><a href="index.php#contact-me">Contact Me</li></a>
             <div class="social-media">
                 <li><i class="fa-brands fa-facebook-f"></i></li>
                 <li><i class="fa-brands fa-instagram"></i></li>
@@ -100,7 +100,7 @@
         <div class="contactme">
             <h2>Get In Touch</h2>
             <p>If you would like to contact me, you can do so here:</p>
-            <h3>07456944222<br> <a href="kanoxx.gray@gmail.com">Click here to send Email</a></h3>
+            <h3>07456944222<br> <a href="mailto:kanoxx.gray@gmail.com">Click here to send Email</a></h3>
             <p>Or, you can use the contact form and i'll get back to you as soon as i can</p>
             <div class="form-sent hidden">Form Sent Successfully!</div>
         </div>

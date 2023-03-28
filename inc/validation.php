@@ -14,8 +14,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         // Insert data into database
         $servername = "localhost";
-        $username = "samgray";
-        $password = "qhfQpSI1nQ6@qd0v";
+        $username = "samgray_netmatters";
+        $password = "f,7?5HxRoXs*";
         $dbname = "samgray_portfolio";
 
         // Create database connection

@@ -615,6 +615,7 @@ input.valid {
 .sqltable {
   width: auto !important;
   height: auto !important;
+  margin: 30px;
 }
 
 pre {
@@ -628,7 +629,7 @@ pre {
   flex-direction: column;
   align-items: center;
   background-color: #1f2833;
-  margin-left: 210px;
+  width: 100%;
 }
 
 .cookie-valid img {
@@ -648,8 +649,33 @@ pre {
   margin-bottom: 15px;
 }
 
+.ajax-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1f2833;
+  width: 100%;
+}
+
+.ajax-form img {
+  border: 2px #c5c6c7 solid;
+  width: 100%;
+  max-width: 900px;
+  max-height: 900px;
+}
+
+.ajax-form p {
+  color: #c5c6c7;
+  max-width: 50%;
+}
+
+.ajax-form h4 {
+  color: #c5c6c7;
+  margin-bottom: 15px;
+}
+
 @media screen and (max-width: 992px) {
-  .cookie-valid {
+  .cookie-valid, .ajax-form {
     margin-left: 0;
   }
   .comingsoon {

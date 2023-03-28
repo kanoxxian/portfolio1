@@ -95,43 +95,45 @@
     </div>
 </div>
 
-
+<?php include './inc/validation.php';?>
     <div class="footer-container" id="contact-me">
         <div class="contactme">
             <h2>Get In Touch</h2>
             <p>If you would like to contact me, you can do so here:</p>
             <h3>07456944222<br> <a href="kanoxx.gray@gmail.com">Click here to send Email</a></h3>
             <p>Or, you can use the contact form and i'll get back to you as soon as i can</p>
+            <div class="form-sent hidden">Form Sent Successfully!</div>
         </div>
-            <form>
-                <div class="first-name">
-                    <input name="name"  type="text" id="fname">
-                    <div class="error-hint hidden">Your First Name is required.</div>
-                    <label for="fname"><i class="fa-solid fa-user"></i> First Name</label>
-                </div>
-                <div class="last-name">
-                    <input name="lname" type="text" id="lname" >
-                    <div class="error-hint hidden">Your Last Name is required.</div>
-                    <label for="lname"><i class="fa-solid fa-user"></i> Last Name</label>
-                </div>
-                <div class="email">
-                    <input name="email" type="email" id="email" >
-                    <div class="error-hint hidden">A valid email is required.</div>
-                    <label for="email"><i class="fa-solid fa-envelope"></i> Email</label>
-                </div>
-                <div class="subject">
-                    <input name="subject" type="text" id="subject" >
-                    <div class="error-hint hidden">Please add a Subject.</div>
-                    <label for="subject"><i class="fa-solid fa-note-sticky"></i> Subject</label>
-                </div>
-                <div class="message">
-                    <textarea name="message" id="message" cols="90" rows="10" ></textarea>
-                    <div class="error-hint hidden">Please add a Message.</div>
-                    <label for="message"><i class="fa-solid fa-message"></i> Message</label>
-                </div>
-                <button type="submit"><i class="fa-solid fa-paper-plane"></i> Submit</button>
-            </form>
+        <form id="contact-form" method="POST">
+    <div class="first-name">
+        <input name="fname" type="text" id="fname">
+        <div class="error-hint hidden">Your First Name is required.</div>
+        <label for="fname"><i class="fa-solid fa-user"></i> First Name</label>
     </div>
+    <div class="last-name">
+        <input name="lname" type="text" id="lname" >
+        <div class="error-hint hidden">Your Last Name is required.</div>
+        <label for="lname"><i class="fa-solid fa-user"></i> Last Name</label>
+    </div>
+    <div class="email">
+        <input name="email" type="email" id="email" >
+        <div class="error-hint hidden">A valid email is required.</div>
+        <label for="email"><i class="fa-solid fa-envelope"></i> Email</label>
+    </div>
+    <div class="subject">
+        <input name="subject" type="text" id="subject" >
+        <div class="error-hint hidden">Please add a Subject.</div>
+        <label for="subject"><i class="fa-solid fa-note-sticky"></i> Subject</label>
+    </div>
+    <div class="message">
+        <textarea name="message" id="message" cols="90" rows="10" ></textarea>
+        <div class="error-hint hidden">Please add a Message.</div>
+        <label for="message"><i class="fa-solid fa-message"></i> Message</label>
+    </div>
+    <button type="submit" name="submit"><i class="fa-solid fa-paper-plane"></i> Submit</button>
+</form>
+    </div>
+<script src="js/ajax.js"></script>
 <script type="text/javascript" src="js/particles.min.js"></script>
 <script type="text/javascript" src="js/custom-particles.js"></script>
 <script src="js/validation.js"></script>
